@@ -1,0 +1,114 @@
+html {
+	background:#fff url(images/silhouette.png) 50% 100px no-repeat fixed;
+	background-position:bottom;
+}
+
+body {
+	background:url(images/sky.png) repeat-x;
+	font-family:"Helvetica Neue",Helvetica,Arial,"Liberation Sans",FreeSans,sans-serif;
+	font-size:small;
+	margin:0;
+	padding:0;
+}
+
+h1 {
+	color:#000;
+	font-size:1.8em;
+	margin:0;
+}
+
+img {
+	margin:0;
+	padding:0;
+}
+
+a,
+a:link,
+a:visited {
+	color:#1e6a95;
+	text-decoration:underline;
+}
+
+a:hover {
+	color:#363153;
+}
+
+a:active {
+	color:#000;
+}
+
+input {
+	font-size:1.4em;
+	padding:0.2em 0.75em;
+}
+
+.saveform {
+	background-color:#536895;
+	border-radius:1px;
+	box-shadow:inset 1px 6px 12px rgba(255,255,255,0.4),inset -1px -10px 5px rgba(0,0,0,0.4),1px 2px 1px black;
+	color:#fff;
+	font-family:"Lucida Grande",Tahoma,Verdana,sans-serif;
+	font-size:18px;
+	font-weight:bold;
+	text-shadow:1px 1px 1px black;
+	width:120px;
+	height:30px;
+}
+.saveform:hover {
+	background-color:#1e6a95;
+	cursor: pointer;
+}
+
+input[type=text],
+input[type=password] {
+	background-color:#d1c6c0;
+	border:2px solid #877467;
+	display:block;
+	width:80%;
+}
+input[type=text]:focus,
+input[type=password]:focus {
+	background-color:#fff;
+	border-color:#000;
+}
+
+label {
+	font-weight:bold;
+	padding:0;
+	width:100%;
+}
+
+.section {
+	margin:1.5ex 0;
+	width:100%;
+}
+
+#page {
+	height:100%;
+	margin:0 auto;
+	max-width:600px;
+	width:100%;
+}
+
+#header {
+	display:inline-block;
+	margin:0;
+    padding:1em 0 3em 0;
+}
+
+#body {
+    border:2px double #ccc;
+	border-radius:2ex;
+	color:#000;
+	margin-bottom:0.6em;
+	padding:2em;
+}
+
+#body.alert {
+	background-color:rgb(254,232,139) !important;
+	background-color:#fdd017;
+}
+
+#spinner {
+	margin:4.1em 0 3em 48%;
+}

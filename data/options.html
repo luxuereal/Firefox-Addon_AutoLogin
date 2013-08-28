@@ -1,0 +1,49 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>UCLA Automated Login | Options</title>
+</head>
+<link rel="stylesheet" href="main.css" type="text/css"/>
+<style></style>
+
+<script type="text/javascript">
+// Saves options to localStorage.
+function save_options() {
+  var user = document.getElementById("user").value;
+  var pass = document.getElementById("pass").value;
+  // Clear password field.
+  document.getElementById("pass").value="";
+  // Send off data.
+  window.postMessage([user,pass],"*");
+}
+// Checks if enter key is pressed and clicks "Save" if so.
+function check_enter(e) {
+  if(e.keyCode == 13) {
+    document.getElementById('save').click();
+  }
+};
+</script>
+
+<body>
+  <div id="page">
+    <div id="header"><img src="logo.png" alt="UCLA Logon Logo" title="UCLA Logon Logo"></div>
+    <div id="body" class="login">
+      <div id="content">
+        <h1>Save your UCLA Login info to your computer:</h1>
+          <div class="section">
+            <label for="user">UCLA Logon ID</label>
+            <input name="user" id="user" type="text" autocomplete="off" tabindex="1" onkeypress="check_enter(event)">
+          </div>
+          <div class="section">
+            <label for="pass">Password</label>
+            <input name="pass" id="pass" type="password" autocomplete="off" tabindex="2" onkeypress="check_enter(event)">
+          </div>
+          <div class="section">
+            <button onClick="save_options()" class="saveform" id="save" tabindex="3">Save</button>
+          </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
